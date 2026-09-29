@@ -1,0 +1,35 @@
+[
+  {
+    "id": "log-1790278211191",
+    "timestamp": "2026-09-24T19:30:11.191Z",
+    "sender": "Make.com Scenario (Daily News Crawl & AI Summary)",
+    "status": "simulated",
+    "articleTitle": "EU Green AI Standard: Measuring Watt-Hour per Token in Foundation Models [19:30]",
+    "category": "ai-news",
+    "cpcEstimate": 35.8,
+    "ip": "34.141.88.210 (Make.com Cloud Worker EU-1)",
+    "payloadSnippet": "{\"scenario\":\"Daily Morning News Crawler -> Gemini/OpenAI Summarizer -> Webhook\",\"crawledCategory\":\"ai-news\",\"title\":\"EU Green AI Standard: M"
+  },
+  {
+    "id": "log-init-1",
+    "timestamp": "2026-09-24T17:30:07.540Z",
+    "sender": "Make.com Scenario (Daily EU Auto & Tech RSS)",
+    "status": "success",
+    "articleTitle": "Commercial Cyber Liability in the EU: Directives & Underwriting Shifts",
+    "category": "insurance",
+    "cpcEstimate": 38.5,
+    "ip": "185.199.110.153",
+    "payloadSnippet": "{\"category\":\"insurance\",\"source\":\"EIOPA\",\"words\":412}"
+  },
+  {
+    "id": "log-init-2",
+    "timestamp": "2026-09-24T14:30:07.541Z",
+    "sender": "Make.com Scenario (Börse & ECB Daily Digest)",
+    "status": "success",
+    "articleTitle": "ECB Rate Trajectory & High-Yield Euro Fixed Deposits",
+    "category": "finance",
+    "cpcEstimate": 34,
+    "ip": "185.199.110.153",
+    "payloadSnippet": "{\"category\":\"finance\",\"source\":\"Financial Times\",\"words\":380}"
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "name": "NordicPulse | EU High-CPC Automated Editorial & Make.com Webhook Hub",
+  "description": "An automated, AdSense-compliant publication for Insurance, Finance, Car DIY, and AI News with European GDPR compliance and daily Make.com crawling pipeline.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
