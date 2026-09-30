@@ -1,8 +1,6 @@
 {
-  "name": "Nordic Pulse | Daily News Digest",
-  "description": "A daily digest of Insurance, Finance, Car DIY and AI news with original summaries and source links.",
+  "name": "NordicPulse | EU High-CPC Automated Editorial & Make.com Webhook Hub",
+  "description": "An automated, AdSense-compliant publication for Insurance, Finance, Car DIY, and AI News with European GDPR compliance and daily Make.com crawling pipeline.",
   "requestFramePermissions": [],
-  "majorCapabilities": [
-    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
-  ]
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

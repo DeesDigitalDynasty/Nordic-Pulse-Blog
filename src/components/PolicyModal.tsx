@@ -136,7 +136,7 @@ export const PolicyModal: React.FC<PolicyModalProps> = ({
                 Privacy Policy & Advertising Cookie Disclosures
               </h3>
               <p>
-                Nordic Pulse ("we", "us", or "our") operates this online publication. This Privacy Policy outlines how information is collected, utilized, and safeguarded across all international audiences, including visitors residing in the United States, the European Economic Area (EEA), the United Kingdom, and globally.
+                ZP Articles ("we", "us", or "our") operates this online publication. This Privacy Policy outlines how information is collected, utilized, and safeguarded across all international audiences, including visitors residing in the United States, the European Economic Area (EEA), the United Kingdom, and globally.
               </p>
 
               <h4 className="text-sm font-bold text-[#1E2238] pt-2">
@@ -267,15 +267,15 @@ export const PolicyModal: React.FC<PolicyModalProps> = ({
             <div className="space-y-4">
               <h3 className="text-lg font-bold text-[#1E2238]">Terms of Service</h3>
               <p>
-                By accessing Nordic Pulse, you agree to these Terms of Service, applicable laws, and regulations. If you do not agree, you are prohibited from using or accessing this site.
+                By accessing ZP Articles, you agree to these Terms of Service, applicable laws, and regulations. If you do not agree, you are prohibited from using or accessing this site.
               </p>
               <h4 className="text-sm font-bold text-[#1E2238] pt-2">Intellectual Property Rights</h4>
               <p>
-                All original text, summaries, graphics, and visual layouts are proprietary to Nordic Pulse and protected under international copyright treaties. Brief quotations with proper attribution and a direct canonical hyperlink are permitted.
+                All original text, summaries, graphics, and visual layouts are proprietary to ZP Articles and protected under international copyright treaties. Brief quotations with proper attribution and a direct canonical hyperlink are permitted.
               </p>
               <h4 className="text-sm font-bold text-[#1E2238] pt-2">Limitation of Liability</h4>
               <p>
-                In no event shall Nordic Pulse or its contributors be held liable for damages arising out of the use or inability to use the informational materials contained on this website.
+                In no event shall ZP Articles or its contributors be held liable for damages arising out of the use or inability to use the informational materials contained on this website.
               </p>
             </div>
           )}
@@ -290,7 +290,7 @@ export const PolicyModal: React.FC<PolicyModalProps> = ({
                     <Building className="w-4 h-4 text-[#1E2238]" />
                     <span>Publisher & Legal Entity</span>
                   </div>
-                  <p className="text-xs text-slate-500">Nordic Pulse</p>
+                  <p className="text-xs text-slate-500">ZP Articles Publishing Group</p>
                   <p className="text-xs text-slate-400">Digital Editorial Division</p>
                 </div>
                 <div className="p-4 rounded-2xl bg-white border border-[#EDE8DB] space-y-1">
@@ -298,7 +298,7 @@ export const PolicyModal: React.FC<PolicyModalProps> = ({
                     <Mail className="w-4 h-4 text-[#1E2238]" />
                     <span>Editorial Desk</span>
                   </div>
-                  <p className="text-xs text-slate-500">Use the contact form on this site</p>
+                  <p className="text-xs text-slate-500">desk@zparticles-journal.com</p>
                   <p className="text-xs text-slate-400">Response turnaround: 24h</p>
                 </div>
               </div>

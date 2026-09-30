@@ -2,9 +2,9 @@ node_modules/
 build/
 dist/
 coverage/
-*.log
-.env*
-!.env.example
-.vercel
-# Runtime data (local dev only). Never commit: may contain messages and logs.
 data/
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example

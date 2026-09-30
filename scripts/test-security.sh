@@ -5,30 +5,30 @@ echo "=== RUNNING SECURITY & PRIVACY VERIFICATION SUITE ==="
 
 BASE_URL="http://localhost:3000"
 
-# Test 1: POST /api/webhook/make without key must return 401 or 503 (fail closed)
+# Test 1: POST /api/webhook/make without key must return 401
 CODE=$(curl -s -o /dev/null -w "%{http_code}" -X POST "${BASE_URL}/api/webhook/make" -H "Content-Type: application/json" -d '{"title":"Test"}')
-if [ "$CODE" -eq 401 ] || [ "$CODE" -eq 503 ]; then
-  echo "✔ Test 1 PASS: POST /api/webhook/make without key returned $CODE (fail-closed)"
+if [ "$CODE" -eq 401 ]; then
+  echo "✔ Test 1 PASS: POST /api/webhook/make without key returned 401"
 else
-  echo "✖ Test 1 FAIL: POST /api/webhook/make without key returned $CODE (expected 401 or 503)"
+  echo "✖ Test 1 FAIL: POST /api/webhook/make without key returned $CODE (expected 401)"
   exit 1
 fi
 
-# Test 2: POST /api/webhook/make with invalid key must return 401 or 503
+# Test 2: POST /api/webhook/make with invalid key must return 401
 CODE=$(curl -s -o /dev/null -w "%{http_code}" -X POST "${BASE_URL}/api/webhook/make" -H "x-api-key: wrong_invalid_key_12345" -H "Content-Type: application/json" -d '{"title":"Test"}')
-if [ "$CODE" -eq 401 ] || [ "$CODE" -eq 503 ]; then
-  echo "✔ Test 2 PASS: POST /api/webhook/make with invalid key returned $CODE"
+if [ "$CODE" -eq 401 ]; then
+  echo "✔ Test 2 PASS: POST /api/webhook/make with invalid key returned 401"
 else
-  echo "✖ Test 2 FAIL: POST /api/webhook/make with invalid key returned $CODE (expected 401 or 503)"
+  echo "✖ Test 2 FAIL: POST /api/webhook/make with invalid key returned $CODE (expected 401)"
   exit 1
 fi
 
-# Test 3: POST /api/webhook/make with query param apiKey must be rejected (400 or 401)
+# Test 3: POST /api/webhook/make with query param apiKey must return 400
 CODE=$(curl -s -o /dev/null -w "%{http_code}" -X POST "${BASE_URL}/api/webhook/make?apiKey=leaked_query_key" -H "Content-Type: application/json" -d '{"title":"Test"}')
-if [ "$CODE" -eq 400 ] || [ "$CODE" -eq 401 ] || [ "$CODE" -eq 503 ]; then
-  echo "✔ Test 3 PASS: POST /api/webhook/make with query param key rejected with $CODE"
+if [ "$CODE" -eq 400 ]; then
+  echo "✔ Test 3 PASS: POST /api/webhook/make with query param key returned 400 (Query key rejected)"
 else
-  echo "✖ Test 3 FAIL: POST /api/webhook/make with query param key returned $CODE (expected 400 or 401)"
+  echo "✖ Test 3 FAIL: POST /api/webhook/make with query param key returned $CODE (expected 400)"
   exit 1
 fi
 
@@ -41,12 +41,12 @@ else
   exit 1
 fi
 
-# Test 5: GET /api/webhook/logs without key must return 401 or 503
+# Test 5: GET /api/webhook/logs without key must return 401
 CODE=$(curl -s -o /dev/null -w "%{http_code}" "${BASE_URL}/api/webhook/logs")
-if [ "$CODE" -eq 401 ] || [ "$CODE" -eq 503 ]; then
-  echo "✔ Test 5 PASS: GET /api/webhook/logs without key returned $CODE (fail-closed)"
+if [ "$CODE" -eq 401 ]; then
+  echo "✔ Test 5 PASS: GET /api/webhook/logs without key returned 401"
 else
-  echo "✖ Test 5 FAIL: GET /api/webhook/logs without key returned $CODE (expected 401 or 503)"
+  echo "✖ Test 5 FAIL: GET /api/webhook/logs without key returned $CODE (expected 401)"
   exit 1
 fi
 

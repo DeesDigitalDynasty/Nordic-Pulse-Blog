@@ -20,9 +20,9 @@ export const Footer: React.FC<FooterProps> = ({
         <div className="space-y-3">
           <div className="flex items-center gap-2.5">
             <div className="w-8 h-8 rounded-xl bg-[#FDD468] text-[#1E2238] flex items-center justify-center font-bold text-sm">
-              NP
+              ZP
             </div>
-            <span className="font-extrabold text-base tracking-tight text-white">Nordic Pulse</span>
+            <span className="font-extrabold text-base tracking-tight text-white">ZP Articles</span>
           </div>
           <p className="text-xs text-slate-400 leading-relaxed">
             Independent, research-driven journalism and practical analysis across Finance, Automobiles, Insurance, and Artificial Intelligence.
@@ -187,7 +187,7 @@ export const Footer: React.FC<FooterProps> = ({
 
       {/* Bottom Copyright Bar */}
       <div className="pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-slate-400">
-        <p>© {new Date().getFullYear()} Nordic Pulse. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} ZP Articles. All rights reserved.</p>
         <p className="flex items-center gap-2">
           <span>GDPR / CCPA Protected</span>
           <span>·</span>

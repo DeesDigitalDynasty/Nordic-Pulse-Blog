@@ -61,7 +61,7 @@ export default function App() {
     fetchArticles();
 
     // Check localStorage for consent preferences
-    const stored = localStorage.getItem('np_consent_preferences');
+    const stored = localStorage.getItem('zp_consent_preferences');
     if (stored) {
       try {
         setConsentPrefs(JSON.parse(stored));
@@ -101,7 +101,7 @@ export default function App() {
 
   const handleSaveConsent = (prefs: ConsentPreferences) => {
     setConsentPrefs(prefs);
-    localStorage.setItem('np_consent_preferences', JSON.stringify(prefs));
+    localStorage.setItem('zp_consent_preferences', JSON.stringify(prefs));
     setShowFloatingConsentBanner(false);
   };
 

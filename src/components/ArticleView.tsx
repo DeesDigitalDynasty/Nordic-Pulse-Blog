@@ -131,17 +131,11 @@ export const ArticleView: React.FC<ArticleViewProps> = ({
           {/* Author Byline */}
           <div className="pt-2 pb-4 border-y border-[#EDE8DB] flex items-center justify-between gap-4">
             <div className="flex items-center gap-3">
-              {article.author.avatar ? (
-                <img
-                  src={article.author.avatar}
-                  alt={article.author.name}
-                  className="w-10 h-10 rounded-2xl object-cover border border-[#EDE8DB]"
-                />
-              ) : (
-                <div className="w-10 h-10 rounded-2xl bg-[#1E2238] text-white text-xs font-bold flex items-center justify-center">
-                  NP
-                </div>
-              )}
+              <img
+                src={article.author.avatar}
+                alt={article.author.name}
+                className="w-10 h-10 rounded-2xl object-cover border border-[#EDE8DB]"
+              />
               <div>
                 <div className="text-xs font-bold text-[#1E2238]">{article.author.name}</div>
                 <div className="text-[11px] text-slate-400">{article.author.role} · {article.author.expertise}</div>
@@ -203,13 +197,6 @@ export const ArticleView: React.FC<ArticleViewProps> = ({
           </div>
         </div>
 
-        {(article.category === 'finance' || article.category === 'insurance') && (
-          <p className="text-[11px] text-slate-500 leading-relaxed">
-            General information only. This is not financial, insurance or legal advice. Check the original source and
-            consult a qualified professional before making decisions.
-          </p>
-        )}
-
         {/* Sourcing reference (neutral reader information) */}
         {article.sourceName && (
           <div className="p-4 rounded-2xl bg-[#FAF6ED] border border-[#EDE8DB] text-xs text-slate-600 flex items-center justify-between">
@@ -218,10 +205,10 @@ export const ArticleView: React.FC<ArticleViewProps> = ({
               <a
                 href={article.sourceUrl}
                 target="_blank"
-                rel="noopener noreferrer nofollow"
+                rel="noreferrer"
                 className="text-[#1E2238] font-semibold underline flex items-center gap-1"
               >
-                <span>Read original</span>
+                <span>Primary Document</span>
                 <ExternalLink className="w-3 h-3" />
               </a>
             )}

@@ -57,17 +57,17 @@ export const Sidebar: React.FC<SidebarProps> = ({
   return (
     <aside className="w-full lg:w-60 flex flex-col justify-between shrink-0 text-white select-none">
       <div className="space-y-8">
-        {/* Brand Block: Nordic Pulse */}
+        {/* Brand Block matching reference image: Yellow ZP icon badge + ZP articles */}
         <div className="flex items-center gap-3 px-2 pt-1">
-          <div className="w-10 h-10 rounded-2xl bg-[#FDD468] text-[#1E2238] flex items-center justify-center font-bold shadow-sm">
-            <span className="font-mono text-base font-extrabold tracking-tight">NP</span>
+          <div className="w-10 h-10 rounded-xl bg-[#FDD468] text-[#1E2238] flex items-center justify-center font-bold shadow-sm">
+            <span className="font-mono text-base font-extrabold tracking-tight">ZP</span>
           </div>
           <div>
-            <span className="font-bold text-base tracking-tight text-white block leading-none">
-              Nordic Pulse
+            <span className="font-bold text-lg tracking-tight text-white block leading-none">
+              ZP
             </span>
-            <span className="text-[11px] text-slate-300 font-medium block mt-1">
-              daily digest
+            <span className="text-xs text-slate-300 font-medium block mt-0.5">
+              articles
             </span>
           </div>
         </div>
