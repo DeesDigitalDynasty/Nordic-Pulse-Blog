@@ -19,10 +19,14 @@ export interface Article {
   sourceName?: string;
   sourceUrl?: string;
   readingTimeMinutes: number;
-  cpcKeywords: string[];
-  estimatedCpcEur: number;
+  /** Internal only. Never returned by the public API. */
+  cpcKeywords?: string[];
+  /** Internal only. Never returned by the public API. */
+  estimatedCpcEur?: number;
   isSponsored?: boolean;
   makePipelineId?: string;
+  /** Missing means published (older stored articles). */
+  status?: 'published' | 'draft';
 }
 
 export interface WebhookLog {
@@ -32,7 +36,9 @@ export interface WebhookLog {
   status: 'success' | 'failed' | 'simulated';
   articleTitle: string;
   category: Category;
-  cpcEstimate: number;
+  cpcEstimate?: number;
+  /** Deprecated: client IPs are no longer stored. */
+  ip?: string;
   payloadSnippet: string;
 }
 
