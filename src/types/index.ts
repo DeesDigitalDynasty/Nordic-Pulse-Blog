@@ -33,7 +33,6 @@ export interface WebhookLog {
   articleTitle: string;
   category: Category;
   cpcEstimate: number;
-  ip?: string;
   payloadSnippet: string;
 }
 
